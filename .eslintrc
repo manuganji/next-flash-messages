@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import"
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": false }],
+    "padded-blocks": ["error", { "blocks": "never" }],
+    "semi": [2, "never"]
+  }
+}

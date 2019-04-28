@@ -1,0 +1,59 @@
+{
+  "name": "next-flash-messages",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/tokuda109/next-flash-messages",
+  "main": "dist/next-flash-messages.js",
+  "types": "dist/next-flash-messages.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tokuda109/next-flash-messages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tokuda109/next-flash-messages/issues"
+  },
+  "author": "Tsuyoshi Tokuda <tsuyoshi@tokuda.me>",
+  "keywords": [
+    "next",
+    "react",
+    "cookie",
+    "flash"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rollup -c rollup.config.js",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest --config jest.config.js --runInBand"
+  },
+  "dependencies": {
+    "next": ">7.0.0",
+    "universal-cookie": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/next": "^7.0.0",
+    "@types/react": "^16.8.0",
+    "@types/react-dom": "^16.8.0",
+    "@types/universal-cookie": "^2.2.0",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.0",
+    "eslint-plugin-jest": "^22.4.0",
+    "jest": "^24.7.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "rollup": "^1.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-dts": "^0.15.0",
+    "rollup-plugin-node-resolve": "^4.2.0",
+    "rollup-plugin-typescript2": "^0.20.0",
+    "sinon": "^7.3.0",
+    "ts-jest": "^24.0.0",
+    "tslib": "^1.9.0",
+    "typescript": "^3.4.0"
+  }
+}

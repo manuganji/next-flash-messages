@@ -1,0 +1,12 @@
+{
+  "name": "next-flash-messages-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next"
+  },
+  "dependencies": {
+    "next": "^7.0.0",
+    "next-flash-messages": "file:../"
+  }
+}
