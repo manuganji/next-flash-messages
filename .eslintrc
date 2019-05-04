@@ -12,7 +12,10 @@
     "import"
   ],
   "rules": {
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": false }],
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "max-len": ["error", { "code": 120 }],
+    "no-extra-boolean-cast": 0,
     "padded-blocks": ["error", { "blocks": "never" }],
     "semi": [2, "never"]
   }

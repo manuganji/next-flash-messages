@@ -1,5 +1,9 @@
 # next-flash-messages
 
+One-time cookie-based flash messaging library for [next.js](https://nextjs.org/).
+
+[![npm](https://nodei.co/npm/next-flash-messages.png?downloads=true&stars=true)](https://nodei.co/npm/next-flash-messages)
+
 ## Installation
 
 ```
@@ -7,6 +11,9 @@ $ npm install next-flash-messages
 ```
 
 ## Usage
+
+The `next-flash-messages` allows you to temporarily store messages in one request and retrieve them for display in a subsequent request.  
+This library stores flash message in the cookie.
 
 ```javascript
 import React from 'react'
@@ -17,7 +24,8 @@ class IndexPage extends React.Component {
   render() {
     const { flashMessages } = this.props
 
-    const messages = flashMessages.get()
+    // To get all flashed messages by category.
+    const messages = flashMessages.get('flash message category')
 
     return (
       <div>
@@ -33,7 +41,8 @@ class IndexPage extends React.Component {
           }
         })() }
         <a onClick={ () => {
-          flashMessages.set('test')
+          // Set flash message with category.
+          flashMessages.set('flash message strings.', 'flash message category')
         } }>Set flash message</a>
       </div>
     )
@@ -42,3 +51,8 @@ class IndexPage extends React.Component {
 
 export default withFlashMessages(IndexPage)
 ```
+
+## License
+
+`next-flash-messages` is licensed under MIT License.  
+See [LICENSE](https://github.com/tokuda109/next-flash-messages/blob/master/LICENSE) for more information.

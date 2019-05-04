@@ -1,7 +1,7 @@
 {
   "name": "next-flash-messages",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "description": "One-time cookie-based flash messaging library for next.js.",
   "license": "MIT",
   "readmeFilename": "README.md",
   "homepage": "https://github.com/tokuda109/next-flash-messages",

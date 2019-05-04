@@ -29,7 +29,9 @@ class FinishPage extends React.Component {
     return (
       <div>
         { messages.length > 0 ? (
-          <p>{ messages[0][1] }</p>
+          <p><a onClick={ () => {
+            Router.push('/')
+          } }>{ messages[0][1] }</a></p>
         ) : null }
       </div>
     )
